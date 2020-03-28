@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>analytics_view</fullName>
+    <columns>NAME</columns>
+    <columns>Address__c</columns>
+    <columns>Branch__c</columns>
+    <columns>CGPA__c</columns>
+    <columns>City__c</columns>
+    <columns>College_Name__c</columns>
+    <columns>Date_Of_Birth__c</columns>
+    <columns>Degree_of_Qualification__c</columns>
+    <columns>email__c</columns>
+    <columns>Experiance_in_years__c</columns>
+    <columns>First_Name__c</columns>
+    <columns>gender__c</columns>
+    <columns>mobile__c</columns>
+    <columns>State__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Area_Of_Expertise__c</field>
+        <operation>equals</operation>
+        <value>Analytics</value>
+    </filters>
+    <label>analytics view</label>
+    <sharedTo>
+        <roleAndSubordinates>CEO</roleAndSubordinates>
+        <roleAndSubordinates>DirectorDirectSales</roleAndSubordinates>
+        <roleAndSubordinates>SVPHumanResources</roleAndSubordinates>
+    </sharedTo>
+</ListView>

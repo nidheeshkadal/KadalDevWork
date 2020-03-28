@@ -1,0 +1,5 @@
+<apex:page standardStylesheets="false" showHeader="false">
+    <apex:form >
+        <apex:image alt="ghd" height="400" url="https://developer.salesforce.com/files/salesforce-developer-network-logo.png"/>
+    </apex:form>
+</apex:page>

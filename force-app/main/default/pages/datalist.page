@@ -1,0 +1,13 @@
+<apex:page showHeader="false" standardStylesheets="false" >
+ 
+  ["APAC", 1, "SEA", 1, "POD1", 0.15],
+  ["APAC", 1, "IN", 1, "POD2", -0.5],
+  ["NACE", 0.4, "GB", 1, "POD1", 0.15],
+  ["NACE", 0.4, "DE", 1, "POD2", 0.25],
+  ["NACE", 0.4, "DK", 1, "POD3", 0.2],
+  ["NACE", 0.4, "FR", 1, "POD4", 0.5],
+  ["SEEMEA", 0.3, "IL", 1, "POD1", -0.5],
+  ["SEEMEA", 0.3, "IL", 1, "POD2", -1],
+  ["SEEMEA", 0.3, "IL", 1, "POD3", 0.5],
+
+</apex:page>

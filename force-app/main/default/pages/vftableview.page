@@ -1,0 +1,10 @@
+<apex:page controller="vftable">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!acclist}" var="acon">
+                    <apex:column value="{!acon.Name}"/>
+                    <apex:column value="{!acon.Id}"/>
+             </apex:pageBlockTable>  
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

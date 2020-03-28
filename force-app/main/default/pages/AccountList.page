@@ -1,0 +1,20 @@
+<apex:page standardController="Account" recordSetVar="accounts" standardStylesheets="false" showHeader="false">
+<apex:form >
+ 
+
+
+ 
+ <apex:pageBlock title="Account List">
+
+<apex:repeat value="{!Accounts}" var="a">
+ <ul>
+     <li > {!a.Name} </li>
+     <li><apex:outputLink value="/{!a.id}">{!a.id}</apex:outputlink></li>
+ </ul>
+
+
+</apex:repeat>
+</apex:pageBlock>
+</apex:form> 
+
+  </apex:page>

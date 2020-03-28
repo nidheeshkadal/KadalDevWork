@@ -1,0 +1,6 @@
+<apex:page controller="CTMS_GantWrapper" standardStylesheets="false" showHeader="false">
+   var task= {!taskJson};
+   var asd=task;
+    console.log(task);
+
+</apex:page>

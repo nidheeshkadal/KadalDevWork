@@ -1,0 +1,16 @@
+<apex:page controller="leadshow">
+    <apex:form >
+        <apex:pageBlock title="LeadInformation" >
+                <apex:pageBlockButtons location="bottom">
+                    <apex:commandButton action="{!save}"  value="save"/>
+                </apex:pageBlockButtons>
+                    <apex:pageBlockSection title="LeadInformation">
+                         <apex:inputField id="FirstName" value="{!lds.FirstName}"/>
+                         <apex:inputField id="LastName" value="{!lds.LastName}"/>
+                         <apex:inputField id="Email" value="{!lds.Email}"/>
+                         <apex:inputField id="Company" value="{!lds.Company}"/>
+                         <apex:inputField id="Phone" value="{!lds.Phone}"/>
+                    </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

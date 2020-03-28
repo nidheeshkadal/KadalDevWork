@@ -1,0 +1,21 @@
+<apex:page controller="apex1" standardStylesheets="false" showHeader="false">
+  
+  <apex:form >
+  <apex:actionFunction name="calculas" action="{!calculator}" oncomplete="" reRender="get">
+ 
+  </apex:actionFunction>
+    <apex:inputText id="user1" value="{!x}"/> 
+  <apex:inputText id="user2" value="{!y}"/> 
+  
+ <input type="button" onclick="calculas()" value="sum"/>
+ 
+  <apex:outputpanel id="get" >
+  <apex:outputLabel id="sum" value="{!z}"></apex:outputLabel>
+  </apex:outputpanel>
+  
+  
+  
+  
+  </apex:form>
+  
+</apex:page>

@@ -1,0 +1,16 @@
+<apex:page controller="leadshow">
+<apex:sectionHeader title="Leads"/>
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!leadlist}" var="leader">
+                <apex:column headerValue="FirstName" value="{!leader.FirstName}"/>
+                <apex:column headerValue="LastName" value="{!leader.LastName}"/>
+                <apex:column value="{!leader.Company}"/>
+                <apex:column value="{!leader.Email}"/>
+                <apex:column value="{!leader.Phone}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        Click for add leads
+        <apex:commandButton action="{!Move}" value="AddLeads" style="align:right"/>
+    </apex:form>
+</apex:page>

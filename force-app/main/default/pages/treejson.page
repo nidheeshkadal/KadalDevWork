@@ -1,0 +1,5 @@
+<apex:page controller="TreeChartController"  showHeader="false" applyBodyTag="false" applyHtmlTag="false" contentType="text/css">
+  
+ {!root1}
+
+</apex:page>

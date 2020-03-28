@@ -1,0 +1,101 @@
+<apex:page standardController="NewsMaker__c" sidebar="false" extensions="NewsMaker">   
+
+    <style type="text/css">
+
+       .img{width:100px !important;}
+
+       .bPageBlock .detailList tr td, .bPageBlock .detailList tr th, .hoverDetail .bPageBlock .detailList tr td, .hoverDetail .bPageBlock .detailList tr th { border-bottom: none !important;}
+
+       .OptPanel{width:50%;float:left;padding-top:20px;borde:none !important; }  
+
+       .Optpanel1{float:right;padding-right:100px;}  
+
+       .bPageBlock, .individualPalette .bPageBlock
+
+       {
+
+            border: none !important;
+
+           background:none !important;
+
+       }
+
+    
+
+    </style>
+
+    <apex:form >
+
+         <fieldset>
+
+            <legend>Update Your Contact Info</legend>
+
+                <apex:outputpanel layout="block" styleclass="OptPanel">
+                    <apex:pageblock mode="maindetail" >
+
+                        <apex:pageblockSection columns="1">
+
+                            <apex:pageblockSectionItem >
+
+                                <apex:outputLabel value="Contact Name" />
+
+                                <apex:inputtext value="{!conlastname}" />
+
+                            </apex:pageblockSectionItem>
+
+                            <apex:pageblockSectionItem >
+
+                                <apex:outputLabel value="Subject" />
+
+                                <apex:inputTextArea value="{!newsSubject}"/>
+
+                            </apex:pageblockSectionItem>
+
+                           <!-- <apex:pageblockSectionItem >
+
+                                <apex:outputLabel value="Email" />
+
+                                <apex:inputtext value="{!conemail}" />
+
+                            </apex:pageblockSectionItem>-->
+
+                            <apex:pageblockSectionItem >
+
+                                <apex:outputLabel value="Description" />
+
+                               <apex:inputTextArea value="{!newsContent}" />
+
+                            </apex:pageblockSectionItem>
+
+                        </apex:pageblockSection>
+
+                    </apex:pageblock>
+
+               </apex:outputpanel> 
+               
+
+                <apex:outputpanel layout="block" styleclass="Optpanel1">
+
+                    <apex:pageblock mode="maindetail" >          
+
+                        <apex:pageblocksection columns="1" >
+
+                              <apex:image value="{!photourl}" url="{!photourl}" rendered="{!if((photourl == ''),false,true)}" styleclass="img">   </apex:image>
+
+                              <!--<apex:image rendered="{!if((photourl == ''),true,false)}" url="<a target="_blank" href="https://www.financialexpress.com/wp-content/uploads/2016/02/cristiano-ronaldo-re-8.jpg" rel="nofollow">https://www.financialexpress.com/wp-content/uploads/2016/02/cristiano-ronaldo-re-8.jpg</a>" styleclass="img" / >    -->             
+
+                              <apex:inputFile value="{!photo}"> </apex:inputFile>
+
+                              <apex:commandButton value="Upload photo" action="{!uploadphoto}" />                                   
+
+                        </apex:pageblocksection>
+                       
+                    </apex:pageblock>
+
+                 </apex:outputpanel>
+
+           </fieldset>
+
+    </apex:form>
+
+</apex:page>

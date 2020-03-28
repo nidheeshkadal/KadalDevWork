@@ -1,0 +1,9 @@
+<apex:page controller="ObjectListViewController" standardStylesheets="false" showHeader="false" >
+    <html>
+        <div class="container">
+            <h4>
+                {!showid}
+            </h4>
+        </div>
+    </html>
+</apex:page>
